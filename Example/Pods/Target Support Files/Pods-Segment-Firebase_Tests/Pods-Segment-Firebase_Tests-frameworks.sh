@@ -85,7 +85,6 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Analytics-iOS8.3/Analytics.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Segment-Firebase-iOS8.3/Segment_Firebase.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Mockingjay/Mockingjay.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Nimble/Nimble.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Quick/Quick.framework"
@@ -93,7 +92,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Analytics-iOS8.3/Analytics.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Segment-Firebase-iOS8.3/Segment_Firebase.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Mockingjay/Mockingjay.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Nimble/Nimble.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Quick/Quick.framework"

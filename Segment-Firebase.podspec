@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Segment-Firebase/Classes/**/*'
 
   s.dependency 'Analytics', '~> 3.2'
-  s.dependency 'Firebase', '~> 3.3.0'
   s.dependency 'Firebase/Analytics', '~> 3.3.0'
-  s.xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks" "${PODS_ROOT}/FirebaseInstanceID/Frameworks" "${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks" "${PODS_ROOT}/GoogleSymbolUtilities/Frameworks" "${PODS_ROOT}/GoogleUtilities/Frameworks"',
-    'OTHER_LDFLAGS' => '-framework "FirebaseAnalytics" -framework "FirebaseInstanceID" -framework "GoogleInterchangeUtilities" -framework "GoogleSymbolUtilities" -framework "GoogleUtilities"'
-  }
+  # TODO: Figure out why sometimes the following hack is needed
+  # s.xcconfig = {
+  #   'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks" "${PODS_ROOT}/FirebaseInstanceID/Frameworks" "${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks" "${PODS_ROOT}/GoogleSymbolUtilities/Frameworks" "${PODS_ROOT}/GoogleUtilities/Frameworks"',
+  #   'OTHER_LDFLAGS' => '-framework "FirebaseAnalytics" -framework "FirebaseInstanceID" -framework "GoogleInterchangeUtilities" -framework "GoogleSymbolUtilities" -framework "GoogleUtilities"'
+  # }
 end

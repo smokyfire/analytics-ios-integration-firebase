@@ -8,7 +8,10 @@ end
 target 'Segment-Firebase_Tests' do
   use_frameworks!
 
-  pod 'Segment-Firebase', :path => '../'
+  # pod 'Segment-Firebase', :path => '../'
+  pod 'Analytics', '~> 3.2'
+  pod 'Firebase/Analytics', '~> 3.3'
+
   pod 'Quick' # runner lib
   pod 'Nimble' # Matcher lib
   pod 'Mockingjay' # Http mocking

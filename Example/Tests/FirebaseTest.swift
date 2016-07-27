@@ -6,10 +6,10 @@
 //  Copyright © 2016 wcjohnson11. All rights reserved.
 //
 
+
 import Quick
 import Nimble
 import Mockingjay
-import Segment_Firebase
 
 class FirebaseTest: QuickSpec {
   

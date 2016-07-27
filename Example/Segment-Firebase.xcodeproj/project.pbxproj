@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		04F44EFB41E995CFB8FAA0AD /* Pods_Segment_Firebase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E524704932A772013134CE /* Pods_Segment_Firebase_Example.framework */; };
 		5C1D389D1D491D7300FAD429 /* FirebaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D389B1D491CA700FAD429 /* FirebaseTest.swift */; };
+		5C8301761D492B3900FAD306 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5C83016F1D492B3900FAD306 /* .gitkeep */; };
+		5C8301771D492B3900FAD306 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5C8301711D492B3900FAD306 /* .gitkeep */; };
+		5C8301781D492B3900FAD306 /* SEGFirebaseIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8301731D492B3900FAD306 /* SEGFirebaseIntegration.m */; };
+		5C8301791D492B3900FAD306 /* SEGFirebaseIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8301751D492B3900FAD306 /* SEGFirebaseIntegrationFactory.m */; };
 		5CB77BB81D46BFA900D39CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CB77BB71D46BFA900D39CAC /* GoogleService-Info.plist */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -45,6 +49,12 @@
 		572FF9823B5E8986746A4CA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5C1D389A1D491CA700FAD429 /* Segment-Firebase_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Segment-Firebase_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C1D389B1D491CA700FAD429 /* FirebaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FirebaseTest.swift; sourceTree = "<group>"; tabWidth = 2; };
+		5C83016F1D492B3900FAD306 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5C8301711D492B3900FAD306 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5C8301721D492B3900FAD306 /* SEGFirebaseIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGFirebaseIntegration.h; sourceTree = "<group>"; };
+		5C8301731D492B3900FAD306 /* SEGFirebaseIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGFirebaseIntegration.m; sourceTree = "<group>"; };
+		5C8301741D492B3900FAD306 /* SEGFirebaseIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGFirebaseIntegrationFactory.h; sourceTree = "<group>"; };
+		5C8301751D492B3900FAD306 /* SEGFirebaseIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGFirebaseIntegrationFactory.m; sourceTree = "<group>"; };
 		5CB77BB71D46BFA900D39CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6003F58A195388D20070C39A /* Segment-Firebase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segment-Firebase_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +122,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5C83016D1D492B3900FAD306 /* Segment-Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				5C83016E1D492B3900FAD306 /* Assets */,
+				5C8301701D492B3900FAD306 /* Classes */,
+			);
+			name = "Segment-Firebase";
+			path = "../../Segment-Firebase";
+			sourceTree = "<group>";
+		};
+		5C83016E1D492B3900FAD306 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5C83016F1D492B3900FAD306 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5C8301701D492B3900FAD306 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C8301711D492B3900FAD306 /* .gitkeep */,
+				5C8301721D492B3900FAD306 /* SEGFirebaseIntegration.h */,
+				5C8301731D492B3900FAD306 /* SEGFirebaseIntegration.m */,
+				5C8301741D492B3900FAD306 /* SEGFirebaseIntegrationFactory.h */,
+				5C8301751D492B3900FAD306 /* SEGFirebaseIntegrationFactory.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +217,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5C83016D1D492B3900FAD306 /* Segment-Firebase */,
 				5C1D389B1D491CA700FAD429 /* FirebaseTest.swift */,
 				5C1D389A1D491CA700FAD429 /* Segment-Firebase_Example-Bridging-Header.h */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
@@ -299,7 +340,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8301771D492B3900FAD306 /* .gitkeep in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				5C8301761D492B3900FAD306 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +457,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1D389D1D491D7300FAD429 /* FirebaseTest.swift in Sources */,
+				5C8301791D492B3900FAD306 /* SEGFirebaseIntegrationFactory.m in Sources */,
+				5C8301781D492B3900FAD306 /* SEGFirebaseIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +580,6 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Segment-Firebase_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -556,7 +600,6 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Segment-Firebase_Example-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -580,6 +623,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Segment-Firebase_Example-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Segment-Firebase_Example.app/Segment-Firebase_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -600,6 +644,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Segment-Firebase_Example-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Segment-Firebase_Example.app/Segment-Firebase_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
