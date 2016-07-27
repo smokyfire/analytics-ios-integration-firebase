@@ -1,8 +1,6 @@
 #import "SEGFirebaseIntegration.h"
 #import <Analytics/SEGAnalyticsUtils.h>
-#include <Firebase/Firebase.h>
-
-#import <Firebase/Firebase.h>
+#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 
 @implementation SEGFirebaseIntegration

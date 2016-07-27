@@ -82,3 +82,12 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Analytics-iOS8.0/Analytics.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Segment-Firebase-iOS8.0/Segment_Firebase.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Analytics-iOS8.0/Analytics.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Segment-Firebase-iOS8.0/Segment_Firebase.framework"
+fi

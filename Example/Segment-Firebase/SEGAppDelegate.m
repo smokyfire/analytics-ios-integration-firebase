@@ -7,11 +7,13 @@
 //
 
 #import "SEGAppDelegate.h"
+//#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 @implementation SEGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    [FIRApp configure];
     // Override point for customization after application launch.
     return YES;
 }

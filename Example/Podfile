@@ -1,11 +1,15 @@
 
 target 'Segment-Firebase_Example' do
+  use_frameworks!
   pod 'Segment-Firebase', :path => '../'
 
-  target 'Segment-Firebase_Tests' do
-    inherit! :search_paths
+end
 
-    pod 'Specta'
-    pod 'Expecta'
-  end
+target 'Segment-Firebase_Tests' do
+  use_frameworks!
+
+  pod 'Segment-Firebase', :path => '../'
+  pod 'Quick' # runner lib
+  pod 'Nimble' # Matcher lib
+  pod 'Mockingjay' # Http mocking
 end
