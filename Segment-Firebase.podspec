@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.dependency 'Analytics', '~> 3.2'
-  s.dependency 'Firebase/Core', '~> 3.6.0'
+  s.dependency 'Firebase/Core', '~> 3.3.0'
 
   s.xcconfig = {
     'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Firebase/Analytics"'
