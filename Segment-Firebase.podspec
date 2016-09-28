@@ -25,6 +25,10 @@ Pod::Spec.new do |s|
   s.dependency 'Analytics', '~> 3.2'
   s.dependency 'Firebase/Core', '~> 3.6.0'
 
+  s.xcconfig = {
+    'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Firebase/Analytics"'
+  }
+
   s.subspec 'Core' do |core|
     #For users who only want the core Firebase package
   end
